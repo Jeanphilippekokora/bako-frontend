@@ -1,0 +1,205 @@
+<app-nav-home></app-nav-home>
+<button class="questionBtn d-flex align-items-center justify-content-center" routerLink="/faq">
+  <i class="ri-questionnaire-line ri-lg"></i>
+  <span class="questionSpan">&nbsp;&nbsp;ASK A QUESTION</span>
+</button>
+<header>
+  <!----------------DESKTOP AND TABLET NAVBAR STYLE------------------->
+  <div class="desktop-and-tablet">
+    <div class="videoAccueilFrame d-flex justify-content-center position-relative d-flex align-items-center">
+      <div class="videoAccueilRow">
+        <video id="vid" class="videoDescription" oncanplay="this.muted=true" muted="muted" autoplay loop="loop">
+          <source src="../../../assets/videos/bk1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <div class="row position-absolute arrow-direction">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="arrowAnimation"><i class="ri-arrow-down-s-line ri-3x"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------MOBILE NAVBAR STYLE--------------------->
+  <div class="mobile-display mobileHead">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="mbVideoFrame d-flex align-items-center">
+          <div class="mbVideoRow">
+            <video class="videoDescription" oncanplay="this.muted=true" muted autoplay loop="loop">
+              <source src="../../assets/videos/bk1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-5 d-flex justify-content-center">
+          <img src="../../assets/imgs/carBako.png" width="150px">
+        </div>
+      </div>
+      <div class="row">
+        <h6 align="center">BAKO B10</h6>
+        <div class="col-12">
+          <p class="descriptionCarBako">
+            Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.
+          </p>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button class="bakoBlackBtn">GET IT NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container-fluid m-0 p-0">
+    <div class="row marginDesktop">
+      <div class="col-12 pt-0">
+        <h3 align="center" class="weight-400">THIS IS BAKO</h3>
+      </div>
+      <div class="col-12 d-flex justify-content-center"><div class="lineBlue"></div></div>
+    </div>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="mbImageFrame1">
+          <div class="mobileReverse2 pt-1">
+            <div class="margin-left-20">
+              <h6 class="mt-5">OUR STORY</h6>
+              <h3 class="mt-4 weight-400">POWERFUL. AGILE. CLEAN.</h3>
+              <div class="lineBlue"></div>
+              <p class="weight-400 font-mobile">
+                Bako Motors is a German-Tunisian startup that develops solar electric vehicles. We build high-end, cost-friendly, and 100% sustainable transportation solutions powered by Africa's Sun.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="mbImageFrame2">
+          <div class="mobileReverse2 pt-1">
+            <div class="margin-left-20">
+              <h6 class="mt-5">B1 FEATURES</h6>
+              <h3 class="mt-4 weight-400">EFFICIENT LAST-MILE DELIVERY</h3>
+              <div class="lineBlue"></div>
+              <p class="weight-400 font-mobile">
+                Our products are perfectly designed and engineered for urban areas.
+                This feature allows businesses or individual drivers to deliver their goods from the back of the vehicle to the recipient's doorstep.
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3 align="center" class="weight-400">WHY BAKO?</h3>
+      </div>
+      <div class="col-12 d-flex justify-content-center"><div class="lineBlue"></div></div>
+    </div>
+    <div class="row position-relative d-flex justify-content-center">
+      <div class="col-md-3 mt-2 col-xl-3 col-xl-3 col-sm-12 col-xs-12 flex-direction-column">
+        <div class="col-12 d-flex justify-content-center">
+          <button class="buttonWhy position-relative">
+            <img src="../../assets/imgs/innov.png" width="50px">
+            <span class="descMsg">Track your transport fleet instantanly.</span>
+          </button>
+        </div>
+        <div class="col-12 text-center mt-2"><font class="weight-600" color="#252525">Technology</font></div>
+      </div>
+      <div class="col-md-3 mt-2 col-xl-3 col-xl-3 col-sm-12 col-xs-12 flex-direction-column">
+        <div class="col-12 d-flex justify-content-center">
+          <button class="buttonWhy position-relative">
+            <img src="../../assets/imgs/solar.png" width="50px">
+            <span class="descMsg">Fifty(50) free kilometers per day.</span>
+          </button>
+        </div>
+        <div class="col-12 text-center mt-2"><font class="weight-600" color="#252525">Solar cells</font></div>
+      </div>
+      <div class="col-md-3 mt-2 col-xl-3 col-xl-3 col-sm-12 col-xs-12 flex-direction-column">
+        <div class="col-12 d-flex justify-content-center">
+          <button class="buttonWhy position-relative">
+            <img src="../../assets/imgs/economy.png" width="50px">
+            <span class="descMsg">Only 0.5$ per 100 kilometers</span>
+          </button>
+        </div>
+        <div class="col-12 text-center mt-2"><font class="weight-600" color="#252525">Operation cost</font></div>
+      </div>
+      <div class="desktop-and-tablet lineUnderWhy"></div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex align-items-center mt-5 p-0 m-0 bakoShow">
+    <div class="container color-white">
+      <div class="row text-end">
+        <font size="1" class="weight-400 uppercase opacity-5 mobile-display">On board the B1, at the heart of innovation</font>
+        <h1 align="right" class="uppercase carac-size mobile-display">CHARACTERISTICS</h1>
+      </div>
+      <div class="row">
+        <div class="col-6 flex-direction-column">
+          <div class="col-12 d-flex justify-content-center">
+            <img width="100%" src="../../assets/imgs/astro.png">
+          </div>
+          <h5 class="opacity-5" align="center">BAKO B1</h5>
+        </div>
+        <div class="col-6">
+          <h6 class="weight-400 uppercase opacity-5 desktop-and-tablet">On board the B1, at the heart of innovation</h6>
+          <h1 class="uppercase carac-size desktop-and-tablet">CHARACTERISTICS</h1>
+          <table class="mt-4 mobile-right-align" width="100%">
+            <tr>
+              <td class="weight-600">MODEL</td>
+              <td class="weight-600">RANGE</td>
+            </tr>
+            <tr>
+              <td class="value">B10</td>
+              <td class="value">Up to 200km</td>
+            </tr>
+            <tr>
+              <td class="weight-600">CHARGING TIME</td>
+              <td class="weight-600">LOADING CAPACITY</td>
+            </tr>
+            <tr>
+              <td class="value">80% in 2h</td>
+              <td class="value">2000 Liters</td>
+            </tr>
+            <tr>
+              <td class="weight-600">PASSENGERS</td>
+              <td class="weight-600">POWER</td>
+            </tr>
+            <tr>
+              <td class="value">2 persons</td>
+              <td class="value">4000W</td>
+            </tr>
+            <tr>
+              <td class="weight-600">BATTERY TECHNOLOGY</td>
+              <td class="weight-600">PRICE</td>
+            </tr>
+            <tr>
+              <td class="value">Lithium iron phosphate</td>
+              <td class="value">5000 $</td>
+            </tr>
+            <tr>
+              <td class="weight-600">SPEED</td>
+              <td class="weight-600">DRIVER LICENCE</td>
+            </tr>
+            <tr>
+              <td class="value">45km/h</td>
+              <td class="value">No need</td>
+            </tr>
+          </table>
+          <button routerLink="/bako" class="discoverDesktopBtn desktop-and-tablet">DISCOVER THE B1</button>
+        </div>
+      </div>
+      <div class="row mobile-display">
+        <div class="col-12 d-flex justify-content-center">
+          <button class="discoverMobileBtn">DISCOVER THE B1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <app-footer></app-footer>
+</footer>
