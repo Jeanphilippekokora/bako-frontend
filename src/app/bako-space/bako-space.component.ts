@@ -23,6 +23,8 @@ export class BakoSpaceComponent implements OnInit {
   before = false;
   face = false;
   right = false;
+  rendering = true;
+  gallery = false;
 
   constructor() { }
 
@@ -96,5 +98,15 @@ export class BakoSpaceComponent implements OnInit {
      this.bakoB10 = false;
     this.bakoB15 = false;
     this.bakoB20 = true;
+  }
+
+  openRendering(){
+    this.rendering  = true;
+    this.gallery =  false;
+  }
+
+  openGallery(){
+    this.rendering  = false;
+    this.gallery =  true;
   }
 }

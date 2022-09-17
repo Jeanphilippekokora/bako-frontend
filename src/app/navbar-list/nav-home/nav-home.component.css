@@ -1,6 +1,6 @@
 .bakoNavBtn{
 border:0;
-color:white;
+color:black;
 font-weight:500;
 font-size:14px;
 outline:none;
@@ -10,7 +10,7 @@ margin-right:15px;
 }
 
 .souligne{
-border-bottom:3px solid white !important;
+border-bottom:3px solid #e96230 !important;
 }
 
 .preorder{
@@ -19,34 +19,21 @@ color:white !important;
 transition:0.2s;
 }
 
-.bako-blue{
-display:none;
-}
 
 .navbarStyle{
-height:10vh;
+height:14vh;
 z-index:99 !important;
-background:none;
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 box-shadow:none;
-}
-
-.navbarStyle:hover{
-background:white;
-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);
--webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);
--moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);
-}
-
-.navbarStyle:hover .bakoNavBtn{
 color:black;
 }
+
 
 .navbarStyle:hover .souligne{
 border-color:black !important;
 }
 .navbarStyle:hover .bakoPreorderBtn{
-color:black;
-border-color:black;
+opacity: 0.9;
 }
 .navbarStyle:hover .preorder{
 color:black;
@@ -61,13 +48,14 @@ display:none;
 }
 
 .bakoPreorderBtn{
-background:none;
-border:2px solid white;
+background:#e96230;
+border:2px solid #e96230;
 border-radius:30px;
 padding:7px 25px 7px 25px;
 outline:none;
 color:white;
-font-size:14px;
+font-size:12px;
+font-weight:500;
 margin-left:10px;
 }
 
@@ -78,8 +66,9 @@ border-bottom:2px solid white;
 /************MOBILE HEADER***************/
 
 .mbNavbarStyle{
-height:20vh;
+height:25vh;
 z-index:99 !important;
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
 box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);
 -webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);
 -moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.18);

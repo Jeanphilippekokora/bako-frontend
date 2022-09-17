@@ -4,7 +4,7 @@
 .footerValue{
 border:0;
 background:0;
-color:black;
+color: #206495 !important;
 outline:none;
 text-align:left;
 font-size:13px;
@@ -63,4 +63,9 @@ margin-left:15px;
 
 .margin-bottom20{
   margin-bottom:15px;
+}
+
+.backgroundGris{
+  background: #dcdbdf;
+  color: #206495 !important;
 }

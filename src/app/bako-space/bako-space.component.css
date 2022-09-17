@@ -1,25 +1,9 @@
-.backgroundFrame{
-width:100%;
-min-height:calc(35vh - 0px);
-max-height:calc(35vh - 0px);
-overflow-x:hidden;
-overflow-y:hidden;
-}
 
-.backgroundRow{
-width:100%;
-height:auto;
-}
-
-.backgroundImage{
-width:100%;
-height:auto;
-}
 
 .rowAbsolute{
 top:0;
 left:0;
-height:35vh;
+height:40vh;
 z-index:99;
 }
 
@@ -146,7 +130,7 @@ top:53px;
 }
 
 .selector{
-background:#1575b7 !important;
+background:#e96230 !important;
 }
 
 .mbNavigation{
@@ -245,7 +229,7 @@ margin-top:40px;
 }
 
 .backgroundAbsolute{
-height:35vh;
+height:40vh;
 position:absolute;
 z-index:2;
 background-image: linear-gradient(to right top, #1575b7, #0d5a8c, #0b4164, #09283e, #02111c);
@@ -253,15 +237,146 @@ opacity:0.4;
 }
 
 .selectedDirection{
-  border:3px solid #1575b7;
+  border:2px solid #8a8a8a;
 }
 
 .centerSelected{
-  border:3px solid black;
+  border:3px solid #7f8c8d;
 }
 
 @media screen and (max-width:767px) {
   .discoverDesktopBtn{
     width: 88vw;
   }
+  .backgroundFrame{
+  width:100%;
+  min-height:calc(40vh - 0px);
+  max-height:calc(40vh - 0px);
+  overflow-x:hidden;
+  overflow-y:hidden;
+  }
+  
+  .backgroundRow{
+  width:100%;
+  height:auto;
+  }
+  
+  .backgroundImage{
+  width:100vw;
+  height: auto;
+  margin-left:10px;
+  }
+  .pl-25{
+    padding-left: 25px !important;
+  }
+  .discoverDesktopBtn{
+    margin-left:6vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .backgroundFrame{
+    width:100%;
+    min-height:calc(40vh - 0px);
+    max-height:calc(40vh - 0px);
+    overflow-x:hidden;
+    overflow-y:hidden;
+    }
+    
+    .backgroundRow{
+    width:100%;
+    height:auto;
+    }
+    
+    .backgroundImage{
+    width:100vw;
+    height:auto;
+    margin-top:-300px;
+    }
+ }
+ 
+ @media screen and (min-width: 1025px) {
+  .backgroundFrame{
+    width:100%;
+    min-height:calc(40vh - 0px);
+    max-height:calc(40vh - 0px);
+    overflow-x:hidden;
+    overflow-y:hidden;
+    }
+    
+    .backgroundRow{
+    width:100%;
+    height:auto;
+    }
+    
+    .backgroundImage{
+    width:100vw;
+    height:auto;
+    margin-top:-300px;
+    }
+ }
+
+.sectionBtn{
+  background: white;
+  border-radius:3px;
+  border:0;
+  outline: none;
+  color: black;
+  font-size:13px;
+  padding:8px 30px 8px 30px;
+  font-weight:500;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.backgroundGris{
+  background: #dcdbdf;
+  padding-top:40px;
+}
+
+.galleryViewer{
+width:100%;
+min-height:calc(40vh - 0px);
+max-height:calc(40vh - 0px);
+overflow-x:hidden;
+overflow-y:hidden;
+border-radius:3px;
+}
+
+.galleryViewerRow{
+width:100%;
+height:auto;
+}
+
+.imageView{
+  width: 100%;
+  height: auto;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+-ms-flex: 33.33%; /* IE10 */
+flex: 33.33%;
+max-width: 33.33%;
+padding: 0 4px;
+}
+
+.column img {
+vertical-align: middle;
+width: 100%;
+margin-top:8px;
+}
+
+.sectionActive{
+  border:2px solid black;
+}
+
+.backgroundTitle{
+  background-image: linear-gradient(to left, rgba(172, 172, 172, 0), rgb(172, 172, 172));
+}
+
+.top0{
+  position: absolute;
+  top: 0;
 }

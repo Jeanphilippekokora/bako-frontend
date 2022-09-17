@@ -2,54 +2,31 @@
 <div class="container p-0 height-after">
   <mat-card class="matCardRequest p-0 mt-4">
     <div class="row">
-      <div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-xs-12 desktop-and-tablet">
+      <div class="col-md-6 col-xl-6 col-lg-6 col-sm-12 col-xs-12 p-0 desktop-and-tablet">
 <!--        <div class="row mt-4">-->
 <!--          <div class="col-12">-->
 <!--            <h6 align="center" style="opacity:0.9">Choose your Bako model</h6>-->
 <!--          </div>-->
 <!--        </div>-->
-        <div class="row height-100">
-          <div class="col-12 height-100 d-flex">
-            <div class="col-4 p-0 flex-column" >
-              <mat-card class="bakoVersion1 position-relative d-flex align-items-center justify-content-center">
-                <div class="preorderRowStyle">
-                  <img class="bakoExempleImage" src="../../assets/imgs/bakoPicture.jpg">
-                </div>
-                <div class="width-100 position-absolute text-gras"><h5 align="center"><font class="text-decor">B10</font></h5></div>
-              </mat-card>
-            </div>
-            <div class="col-4 p-0 flex-column" >
-              <mat-card class="bakoVersion2 position-relative d-flex align-items-center justify-content-center">
-                <div class="preorderRowStyle">
-                  <img class="bakoExempleImage" src="../../assets/imgs/img15.jpg">
-                </div>
-                <div class="width-100 position-absolute text-gras"><h5 align="center"><font class="text-decor">B15</font></h5></div>
-              </mat-card>
-            </div>
-            <div class="col-4 p-0 flex-column" >
-              <mat-card class="bakoVersion2 position-relative d-flex align-items-center justify-content-center">
-                <div class="preorderRowStyle">
-                  <img class="bakoExempleImage" src="../../assets/imgs/img11.jpg">
-                </div>
-                <div class="width-100 position-absolute text-gras"><h5 align="center"><font class="text-decor">B20</font></h5></div>
-              </mat-card>
-            </div>
+        <div class="preorderFrame">
+          <div class="preorderFrameRow">
+            <img class="orderImage" src="../../assets/imgs/rendering/bakoPreorder.png" alt="preOrder bako motors">
           </div>
         </div>
       </div>
 
 
-      <div class="col-md-6 p-4 pb-5 col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+      <div class="col-md-6 p-0 col-xl-6 col-lg-6 col-sm-12 col-xs-12">
         <div class="row">
           <div class="col-12">
-            <h5 class="mt-4 uppercase" align="center">pre-order</h5>
+            <h5 class="mt-4 uppercase" align="center">PreOrder</h5>
             <div class="col-12 mt-3 d-flex justify-content-center"><div class="lineForm"></div></div>
           </div>
         </div>
         
         <form [formGroup]="form" class="mt-3">
           <div class="col-12 d-flex justify-content-center">
-            <div class="faqInput d-flex align-items-center"><font color="silver">Selected model*:</font>
+            <div class="faqInput d-flex align-items-center"><font color="silver">Version*:</font>
               <input formControlName="model" name="model" class="marginLeftRadio" id="bakoB10" value="b10" type="radio">&nbsp;<label for="bakoB10">Bako B10</label>
               <input formControlName="model" name="model" class="marginLeftRadio" id="bakoB15" value="b15" type="radio">&nbsp;<label for="bakoB15">Bako B15</label>
               <input formControlName="model" name="model" class="marginLeftRadio" id="bakoB20" value="b20" type="radio">&nbsp;<label for="bakoB20">Bako B20</label>
@@ -65,13 +42,13 @@
             <textarea autocomplete="off" formControlName="comment" name="comment" class="commentArea" placeholder="Add a comment..."></textarea>
           </div>
           <div class="col-12 d-flex justify-content-center">
-            <button (click)="sendCommande()" [disabled]="form.invalid" class="sendBtn hvr-hang d-flex align-items-center justify-content-center"><i class="ri-shopping-cart-fill ri-lg"></i>&nbsp;&nbsp;Pre Order</button>
+            <button (click)="sendCommande()" [disabled]="form.invalid" class="sendBtn hvr-hang d-flex align-items-center justify-content-center"><i class="ri-shopping-cart-fill ri-lg"></i>&nbsp;&nbsp;PreOrder</button>
           </div>
         </form>
       </div>
     </div>
   </mat-card>
 </div>
-<footer>
+<footer class="backgroundGris footerMonte">
   <app-footer></app-footer>
 </footer>

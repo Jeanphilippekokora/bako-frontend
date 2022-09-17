@@ -44,6 +44,7 @@ border-radius:30px;
 outline:none;
 width:85%;
 font-size:14px;
+font-weight: 500;
 }
 
 .sendBtn:hover{
@@ -64,7 +65,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
 -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
 -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
 border-radius:10px;
-background-image: linear-gradient(to right top, #1575b7, #126ba8, #0f6199, #0c578a, #094d7c);
+background-image: linear-gradient(to right top, #f75f26, #e35520, #d04b19, #bd4113, #aa370d);
 color:white;
 padding-bottom:40px;
 height:520px;
@@ -125,7 +126,8 @@ label:hover .descMsg{
 visibility:visible;
 }
 
-.bakoVersion1{
+
+.preorderFrame{
 min-height:calc(520px - 0px);
 max-height:calc(520px - 0px);
 overflow-x:hidden;
@@ -136,24 +138,19 @@ border-radius:0;
 padding:0;
 }
 
-.bakoVersion2{
-min-height:calc(520px - 0px);
-max-height:calc(520px - 0px);
-overflow-x:hidden;
-overflow-y:hidden;
-border-radius:0;
-padding:0;
-}
-
 .height-100{
 height:100%;
 }
 
-
-.preorderRowStyle{
+.preorderFrameRow{
 height:auto;
 width:auto;
 }
+
+.orderImage{
+  height: 520px;
+}
+
 
 .bakoExempleImage{
 height:600px;
@@ -195,3 +192,8 @@ cursor:pointer;
 	transition:0.3s;
 }
 
+
+.backgroundGris{
+  background: #dcdbdf;
+  padding-top:40px;
+}
