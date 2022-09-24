@@ -255,6 +255,9 @@ opacity:0.4;
   overflow-x:hidden;
   overflow-y:hidden;
   }
+  .heightImg{
+    height:25vh !important;
+  }
   
   .backgroundRow{
   width:100%;

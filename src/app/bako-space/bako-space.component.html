@@ -8,55 +8,11 @@
     </div>
     <div class="backgroundAbsolute"></div>
     <div class="row d-flex justify-content-center align-items-center position-absolute rowAbsolute">
-      <div class="col-3">
-        <mat-card (click)="changeDix()" class="cardLink" *ngIf="!bDix">
-          <mat-card-header>
-            <mat-card-title>B10</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-        <mat-card (click)="changeDix()" *ngIf="bDix" class="outline cardLink">
-          <mat-card-header>
-            <mat-card-title>B10</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
+      <div class="col-12 text-center" style="margin-top:100px;">
+        <h3 class="color-white">Qorax</h3>
+        <p class="color-white">Find the different models of the vehicle according to their specificities. <br>Flexibility - Sustainability - Security</p>
       </div>
-      <div class="col-3">
-        <mat-card (click)="changeQuinze()" class="cardLink" *ngIf="!bVingt">
-          <mat-card-header>
-            <mat-card-title>B15</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-        <mat-card (click)="changeQuinze()" *ngIf="bVingt" class="outline cardLink">
-          <mat-card-header>
-            <mat-card-title>B15</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button (click)="changeVingt()" class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-      </div>
-      <div class="col-3">
-        <mat-card (click)="changeVingt()" class="cardLink" *ngIf="!bTrente">
-          <mat-card-header>
-            <mat-card-title>B20</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-        <mat-card (click)="changeVingt()" *ngIf="bTrente" class="outline cardLink">
-          <mat-card-header>
-            <mat-card-title>B20</mat-card-title>
-            <mat-card-subtitle>Flexibility - Sustainability - Security</mat-card-subtitle>
-            <mat-card-subtitle><button class="discoverBtn">Discover</button></mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-      </div>
-      <div class="col-12 d-flex justify-content-center">
+      <div class="col-12 d-flex justify-content-center" style="margin-top:-30px;">
         <button (click)="openRendering()" class="sectionBtn {{rendering?'sectionActive':'sectionD'}}">360°</button>
         <button (click)="openGallery()" class="sectionBtn {{gallery?'sectionActive':'sectionD'}}">Gallery</button>
       </div>
@@ -72,19 +28,17 @@
       </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center position-absolute mobileRow rowAbsolute">
-      <div class="col-12 text-center">
-        <h4 class="color-white">Qorax</h4>
-        <p class="color-white">Retrouver les différents modèles du véhicule selon leurs spécifités</p>
+      <div class="col-12 justify-content-center d-flex" style="margin-top:100px">
+        <table width="100%" style="margin-left:5vw">
+          <tr>
+            <td><h4 class="color-white" align="center">Qorax</h4></td>
+          </tr>
+          <tr>
+            <td class="text-center"><p class="color-white">Find the different models of the vehicle according to their specificities.</p></td>
+          </tr>
+        </table>
       </div>
-      <div class="col-12 d-flex justify-content-center">
-        <button (click)="changeDix()" *ngIf="!bDix" class="mbDiscoverBtn">BAKO B10</button>
-        <button (click)="changeDix()" *ngIf="bDix" class="mbDiscoverBtn outline">BAKO B10</button>
-        <button (click)="changeQuinze()" *ngIf="!bVingt" class="mbDiscoverBtn">BAKO B20</button>
-        <button (click)="changeQuinze()" *ngIf="bVingt" class="mbDiscoverBtn outline">BAKO B20</button>
-        <button (click)="changeVingt()" *ngIf="!bTrente" class="mbDiscoverBtn">BAKO B30</button>
-        <button (click)="changeVingt()" *ngIf="bTrente" class="mbDiscoverBtn outline">BAKO B30</button>
-      </div>
-      <div class="col-12 d-flex justify-content-center">
+      <div class="col-12 d-flex justify-content-center" style="margin-top: -15px;">
         <button (click)="openRendering()" class="sectionBtn {{rendering?'sectionActive':'sectionD'}}">360°</button>
         <button (click)="openGallery()" class="sectionBtn {{gallery?'sectionActive':'sectionD'}}">Gallery</button>
       </div>
@@ -248,7 +202,7 @@
     </div>
   </div>
   <div class="mobile-display">
-    <div class="container p-0" style="margin-top:150px">
+    <div class="container p-0" style="margin-top:210px">
       <div class="row">
         <div class="col-12 p-0">
           <h4 class="uppercase carac-size" align="center">CHARACTERISTICS</h4>
