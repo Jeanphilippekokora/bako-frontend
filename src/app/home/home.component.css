@@ -192,6 +192,10 @@ color:white;
     padding-top:200px;
     padding-left:20px;
   }
+  .imageSize{
+    width: 100vw !important;
+    height: auto !important;
+  }
 .remonteTop{
 margin-top:-70px;
 }
